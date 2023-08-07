@@ -5,5 +5,6 @@ import '../index.css';
 export function Main(){
     //remplir via card et logement.json
     <main>
+        
     </main>
 }

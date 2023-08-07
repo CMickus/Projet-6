@@ -29,9 +29,13 @@ const router = createBrowserRouter([
 //ici seront les routes du routings
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route index element={composant page Homepage}/>
+        <Route path="location:id" element={composant page Location}/>
+        <Route path="A-propos" element={compostant page apropos}/>
+      </Route>
+    </Routes>
   );
 }
 
