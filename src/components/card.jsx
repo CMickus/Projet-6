@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
-import logementCards from 'logement.json'
+import '../logements.json'
+
+//dois-je utiliser une fecth ici? je ne sais pas comment ammener la liste ici
 
 export function Card(){
     const [logementCards, setCards] = useState([]);
