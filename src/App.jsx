@@ -36,6 +36,8 @@ function App() {
         <Route path="A-propos" element={compostant page apropos}/>
       </Route>
     </Routes>
+
+    // je n'ai pas compris comment foncitonne les routes j'ai pleins d'informations qui se contre disent je suppose que " composant page c'est plutot Index ou Logement"
   );
 }
 
