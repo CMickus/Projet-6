@@ -31,9 +31,9 @@ function App() {
   return (
     <Routes>
       <Route path="/">
-        <Route index element={composant page Homepage}/>
-        <Route path="location:id" element={composant page Location}/>
-        <Route path="A-propos" element={compostant page apropos}/>
+        <Route index element={<root/>}/>
+        <Route path="location:id" element={<Logement/>}/>
+        <Route path="A-propos" element={<Apropos/>}/>
       </Route>
     </Routes>
 
