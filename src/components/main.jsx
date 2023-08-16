@@ -10,3 +10,5 @@ export function Main(){
         <Card/>
     </main>
 }
+
+export default {Main}

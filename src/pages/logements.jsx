@@ -1,37 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
-export function Logement (){
-      return (
-        <>
-        <Header/>
-        <main>
-          <img src=""/>
+//c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
+
+
+export function Logement() {
+  return (
+    <>
+      <Header />
+      <main>
+        <img src="" />
+        <div>
           <div>
-            <div>
-              <h1>appart</h1>
-              <p>lieu</p>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div>
-              <p>Proprio</p>
-              <img src="" alt="" />
-              <div>les ctit etoiles</div>
-            </div>
+            <h1>appart</h1>
+            <p>lieu</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
           <div>
-            <select name="" id=""></select>
-            <select name="" id=""></select>
+            <p>Proprio</p>
+            <img src="" alt="" />
+            <div>les ctit etoiles</div>
           </div>
-        </main>
-        <Footer/>
-        </>
-      )
+        </div>
+        <div>
+          <div>
+            <p></p>
+            <button>
+              <i></i>
+            </button>
+          </div>
+          <div>
+            <p></p>
+            <button>
+              <i></i>
+            </button>
+          </div>
+
+        </div>
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default {Logement}
+export default { Logement }
