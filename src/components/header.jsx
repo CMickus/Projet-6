@@ -5,10 +5,10 @@ import '../index.css';
 export function Header(){
     return (
         <header>
-            <img src=""/>
+            <img src="..."/>
             <div>
-                <a href="">Acceuil</a>
-                <a href="">À propos</a>
+                <a href="/">Acceuil</a>
+                <a href="/A-propos">À propos</a>
             </div>
         </header>
     )
