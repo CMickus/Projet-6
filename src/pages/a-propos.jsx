@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../index.css';
+import '../index.css';/*
 import Header from '../components/header';
-import Footer from '../components/footer';
+import Footer from '../components/footer';*/
 
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 
 export function Apropos(){
   return(
-    <>
-    <Header/>
-    <img src="" alt=""/>
+    <div>
+    <img src="..." alt="..."/>
     <main>
       <div>
         <p></p>
@@ -37,8 +36,7 @@ export function Apropos(){
         </button>
       </div>
     </main>
-    <Footer/>
-    </>
+    </div>
   )
 }
 

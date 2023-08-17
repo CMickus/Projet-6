@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {Link} from 'react-router-dom';
 import '../index.css';
 
 export function Header(){
@@ -8,7 +9,7 @@ export function Header(){
             <img src="..."/>
             <div>
                 <a href="/">Acceuil</a>
-                <a href="/A-propos">À propos</a>
+                <Link to="/A-propos">À propos</Link>
             </div>
         </header>
     )

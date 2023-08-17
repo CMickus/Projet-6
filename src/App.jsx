@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter as Router, Routes, Route 
 } from "react-router-dom";
-import root from "./index";
-import ErrorPage from "./pages/error-page";
-import Logement from "./pages/logements";
-import Apropos from "./pages/a-propos"
+//import root from "./index";
+import {Logement} from "./pages/logements";
+import {Apropos} from "./pages/a-propos"
 import { Header } from './components/header';
+import {Footer } from './components/footer';
+import {ErrorPage} from './pages/error-page'
 /*
 const router = createBrowserRouter([
   {
@@ -31,11 +32,13 @@ function App() {
   return (
     //<React.StrictMode> <Route path="/" element={<Home/>}/>
     <Router>
+      <Header/>
       <Routes>
         <Route path="/location" element={<Logement/>}/>
         <Route path="/A-propos" element={<Apropos/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
-      <Header/>
+      <Footer/>
     </Router>
     //</React.StrictMode>
     // je n'ai pas compris comment foncitonne les routes j'ai pleins d'informations qui se contre disent je suppose que " composant page c'est plutot Index ou Logement"
