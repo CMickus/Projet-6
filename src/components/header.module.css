@@ -1,0 +1,24 @@
+.headerstyle{
+    color: #FF6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+    height: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.link{
+    text-decoration: none;
+}
+
+:hover.link{
+    text-decoration: underline;
+}
+
