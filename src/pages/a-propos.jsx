@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../index.css';/*
+import '../index.css';
+import style from './a-propos.module.css'
+/*
 import Header from '../components/header';
 import Footer from '../components/footer';*/
-
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 
 export function Apropos(){
   return(
-    <div>
-    <img src="./components/images/paysage_montagne.jpg" alt="..."/>
-    <main>
+    <>
+    <img src="../16165171104718_image1.jpg" alt="Paysage d'une vallée en montagne. Sapins au premiers plan, une rivière coule au fond de la vallée entre les montagnes"/>
+    <main className={style.textdiv}>
       <div>
         <p>Fiabilité</p>
         <button>
@@ -36,7 +37,7 @@ export function Apropos(){
         </button>
       </div>
     </main>
-    </div>
+    </>
   )
 }
 

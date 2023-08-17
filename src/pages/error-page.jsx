@@ -1,4 +1,5 @@
 import { useRouteError } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 export function ErrorPage() {
   const error = useRouteError();
@@ -8,7 +9,7 @@ export function ErrorPage() {
     <div id="error-page">
       <h1>404</h1>
       <p>SOups! La page que vous demandez n'existe pas.</p>
-      <a href="/">Retourner sur la page d'acceuil</a>
+      <Link to="/">Retourner sur la page d'acceuil</Link>
     </div>
   );
 };
