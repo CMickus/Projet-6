@@ -9,28 +9,28 @@ import Footer from '../components/footer';*/
 export function Apropos(){
   return(
     <div>
-    <img src="..." alt="..."/>
+    <img src="./components/images/paysage_montagne.jpg" alt="..."/>
     <main>
       <div>
-        <p></p>
+        <p>Fiabilité</p>
         <button>
           <i></i>
         </button>
       </div>
       <div>
-        <p></p>
+        <p>Respect</p>
         <button>
           <i></i>
         </button>
       </div>
       <div>
-        <p></p>
+        <p>Service</p>
         <button>
           <i></i>
         </button>
       </div>
       <div>
-        <p></p>
+        <p>Sécurité</p>
         <button>
           <i></i>
         </button>

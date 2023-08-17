@@ -8,7 +8,7 @@ export function Header(){
         <header>
             <img src="..."/>
             <div>
-                <a href="/">Acceuil</a>
+                <Link to="/">Acceuil</Link>
                 <Link to="/A-propos">À propos</Link>
             </div>
         </header>
