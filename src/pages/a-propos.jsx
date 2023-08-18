@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import '../index.css';
 import style from './a-propos.module.css';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 /*
 import Header from '../components/header';
 import Footer from '../components/footer';*/
