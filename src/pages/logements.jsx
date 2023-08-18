@@ -33,13 +33,13 @@ export function Logement() {
           <div>
             <p></p>
             <button>
-            <i class="fa-solid fa-chevron-down fa-rotate-180"></i>
+            <i className="fa-solid fa-chevron-down fa-rotate-180"></i>
             </button>
           </div>
           <div>
             <p></p>
             <button>
-            <i class="fa-solid fa-chevron-down fa-rotate-180"></i>
+            <i className="fa-solid fa-chevron-down fa-rotate-180"></i>
             </button>
           </div>
 

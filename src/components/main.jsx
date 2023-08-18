@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import '../index.css';
 //import Card from './components/card';
 
-export function Home(){
+export function Home() {
     //remplir via card et logements.json
     <main>
         <div>
-            <img src="" alt=""/>
+            <img src="" alt="" />
             <p>Chez vous et partout ailleurs</p>
         </div>
         <div>
@@ -15,24 +15,24 @@ export function Home(){
                 <p>Titre de la location</p>
             </div>
             <div>
-            <p>Titre de la location</p>
+                <p>Titre de la location</p>
             </div>
             <div>
-            <p>Titre de la location</p>
+                <p>Titre de la location</p>
             </div>
             <div>
-            <p>Titre de la location</p>
+                <p>Titre de la location</p>
             </div>
             <div>
-            <p>Titre de la location</p>
+                <p>Titre de la location</p>
             </div>
             <div>
-            <p>Titre de la location</p>
+                <p>Titre de la location</p>
             </div>
         </div>
-        
+
     </main>
 }
 
-export default {Home};
+export default { Home };
 //<Card/>
