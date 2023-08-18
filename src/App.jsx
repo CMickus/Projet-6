@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router, Routes, Route 
 } from "react-router-dom";
 //import root from "./index";
-import {Main} from "./components/main";
+import {Home} from "./components/main";
 import {Logement} from "./pages/logements";
 import {Apropos} from "./pages/a-propos"
 import { Header } from './components/header';
@@ -35,7 +35,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Main/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/location" element={<Logement/>}/>
         <Route path="/A-propos" element={<Apropos/>}/>
         <Route path="*" element={<ErrorPage/>}/>

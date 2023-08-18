@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 export function Logement() {
   return (
     <>
-      <Header />
+      
       <main>
         <img src="" />
         <div>
@@ -45,7 +45,7 @@ export function Logement() {
 
         </div>
       </main>
-      <Footer />
+      
     </>
   )
 }

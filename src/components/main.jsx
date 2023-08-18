@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import '../index.css';
 //import Card from './components/card';
 
-export function Main(){
+export function Home(){
     //remplir via card et logements.json
     <main>
         <div>
@@ -34,5 +34,5 @@ export function Main(){
     </main>
 }
 
-export default {Main};
+export default {Home};
 //<Card/>
