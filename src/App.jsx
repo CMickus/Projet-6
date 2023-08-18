@@ -2,30 +2,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  Routes, Route 
+  Routes, Route
 } from "react-router-dom";
 //import root from "./index";
-import {Home} from "./components/main";
-import {Logement} from "./pages/logements";
-import {Apropos} from "./pages/a-propos"
-import { Header } from './components/header';
-import {Footer } from './components/footer';
-import {ErrorPage} from './pages/error-page';
+import {BaseLayout} from "./components/BaseLayout"
+import { Home } from "./pages/home";
+import { Logement } from "./pages/logements";
+import { Apropos } from "./pages/a-propos"
+import { ErrorPage } from './pages/error-page';
 
 //ici seront les routes du routings
 function App() {
   return (
     <>
-      <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/location" element={<Logement/>}/>
-        <Route path="/A-propos" element={<Apropos/>}/>
-        <Route path="*" element={<ErrorPage/>}/>
+        <Route path="/" element={<BaseLayout/>}>
+          <Route index element={<Home />} />
+          <Route path="location/:id" element={<Logement />} />
+          <Route path="A-propos" element={<Apropos />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
       </Routes>
-      <Footer/>
     </>
   );
 }
-
+//un systeme de layout serait mieux pour voir en fonctiond eoù je suis pour modifer header footer and co sanas les repeter dans chaques pages
+/* line 21 route parent et enfant d'elle même on peut metre un autre bundle après ligne 24 et avoir un autre baselayout pour celui là*/
+//regarder dans react router comment recupérer le composante de la route Logement check les synthaxes
 export default App;
