@@ -1,49 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
+import { useParams } from 'react-router-dom';
+import { HiddenText } from '../components/hiddentext';
 //les tags sont AUSSI des composants
+import LogementListe from '../logements.json'
 
 export function Logement() {
-  return (
-    <>
-      
-      <main>
-        <img src="" />
-        <div>
+  const LogementId = useParams();
+  LogementListe.forEach((item) =>{
+    if (item.id === LogementId) {
+      return (
+      <>
+        <main>
+          <img src={item.cover} />
           <div>
-            <h1>appart</h1>
-            <p>lieu</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div>
+              <h1>appart</h1>
+              <p>lieu</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <p>{item.host.name}</p>
+              <img src={item.host.picture} alt="" />
+              <div>les ctit etoiles</div>
+            </div>
           </div>
           <div>
-            <p>Proprio</p>
-            <img src="" alt="" />
-            <div>les ctit etoiles</div>
+            <HiddenText(Descriprition)/>
+            <HiddenText(Equipement)/>
           </div>
-        </div>
-        <div>
-          <div>
-            <p></p>
-            <button>
-            <i className="fa-solid fa-chevron-down fa-rotate-180"></i>
-            </button>
-          </div>
-          <div>
-            <p></p>
-            <button>
-            <i className="fa-solid fa-chevron-down fa-rotate-180"></i>
-            </button>
-          </div>
-
-        </div>
-      </main>
-      
-    </>
-  )
+        </main>
+      </>
+      )}
+      })
 }
 
+//pour les étoiles faire un composant qui posera les étoiles en couleur jusqu'au rating (une liste et index et après sont gris jouer avec classes et css)
+//idem pour les tags c'est une liste a generer via logement
 export default { Logement }
