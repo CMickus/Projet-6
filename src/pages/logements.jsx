@@ -4,7 +4,6 @@ import '../index.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-//c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 
 //les tags sont AUSSI des composants
 

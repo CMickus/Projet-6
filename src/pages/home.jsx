@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
-//import Card from './components/card';
+import Card from '../components/card';
 import logementinfo from "../logements.json"
 
 export function Home() {
@@ -15,30 +15,9 @@ export function Home() {
             <p>Chez vous et partout ailleurs</p>
         </div>
         <div>
-            {/*logementinfo.map((location) =>{
-               //ici le composant card avec les props de map key=uneinformationunique
-               location.id
-                location.cover
-                location.title
-            })*/}
-            <div>
-                <p>Titre de la location</p>
-            </div>
-            <div>
-                <p>Titre de la location</p>
-            </div>
-            <div>
-                <p>Titre de la location</p>
-            </div>
-            <div>
-                <p>Titre de la location</p>
-            </div>
-            <div>
-                <p>Titre de la location</p>
-            </div>
-            <div>
-                <p>Titre de la location</p>
-            </div>
+            {logementinfo.map((location) =>{
+               <Card key={location.id} id={location.id} title={location.title} cover={location.cover}/>
+            })}
         </div>
     </>
     )
