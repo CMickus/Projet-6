@@ -10,7 +10,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';*/
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 //<FontAwesomeIcon className={style.cardcontentcolor} icon="fa-solid fa-chevron-down" rotation={180} />
-import image from "../components/images/paysage_montagne.jpg"
+import Banner from '../components/'
 // importe logement.json de la meme manière
 
 //ici tous les elements element ouvrables sont deqs composants
@@ -19,7 +19,7 @@ import image from "../components/images/paysage_montagne.jpg"
 export function Apropos() {
   return (
     <>
-      <img src={image} alt="Paysage d'une vallée en montagne. Sapins au premiers plan, une rivière coule au fond de la vallée entre les montagnes" />
+      <Banner/>
       <main className={style.textdiv}>
         <div className={style.card}>
           <p className={style.cardcontentcolor}>Fiabilité</p>
