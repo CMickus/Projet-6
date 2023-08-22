@@ -10,16 +10,17 @@ import Header from '../components/header';
 import Footer from '../components/footer';*/
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 //<FontAwesomeIcon className={style.cardcontentcolor} icon="fa-solid fa-chevron-down" rotation={180} />
-import Banner from '../components/'
+import {Banner} from '../components/banner'
 // importe logement.json de la meme manière
 
 //ici tous les elements element ouvrables sont deqs composants
 
 //importer des svg plutot que fontawesome
 export function Apropos() {
+  console.log(window.location)
   return (
     <>
-      <Banner/>
+      {Banner()}
       <main className={style.textdiv}>
         <div className={style.card}>
           <p className={style.cardcontentcolor}>Fiabilité</p>

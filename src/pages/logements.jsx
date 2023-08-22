@@ -8,8 +8,9 @@ import LogementListe from '../logements.json'
 
 export function Logement() {
   const LogementId = useParams();
+  console.log(LogementId)
   LogementListe.forEach((item) =>{
-    if (item.id === LogementId) {
+    if (item.id == LogementId) {
       return (
       <>
         <main>
@@ -31,15 +32,16 @@ export function Logement() {
             </div>
           </div>
           <div>
-            <HiddenText(Descriprition)/>
-            <HiddenText(Equipement)/>
           </div>
         </main>
       </>
       )}
       })
 }
-
+/*
+{HiddenText(Descriprition)}
+{HiddenText(Equipement)}
+*/
 //pour les étoiles faire un composant qui posera les étoiles en couleur jusqu'au rating (une liste et index et après sont gris jouer avec classes et css)
 //idem pour les tags c'est une liste a generer via logement
 export default { Logement }
