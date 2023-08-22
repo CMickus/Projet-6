@@ -10,7 +10,8 @@ export function Card(logementCards){
     const LinkPath = ("/location/" + {logementID}) 
     return (
     <Link id={logementCards.id} to="LinkPath">
-        <img src={logementCards.cover}>{logementCards.title}</img>
+        <img src={logementCards.cover}/>
+        <p>{logementCards.title}</p>
     </Link>
     )
 }
