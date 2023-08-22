@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
 import {Card} from '../components/card';
-import logementinfo from "../logements.json"
-import {Banner} from '../components/banner'
+import logementinfo from "../logements.json";
+import {Banner} from '../components/banner';
 
 
 //utiliser le composant comme fonction en sympe JS et non se buter sur du react tester 
