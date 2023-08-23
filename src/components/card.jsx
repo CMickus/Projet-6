@@ -7,7 +7,8 @@ import './Card.module.css';
 
 export function Card(logementCards){
     const logementID = logementCards.id
-    const LinkPath = ("/location/" + {logementID}) 
+    const LinkPath = ("/location/" + {logementID})
+    console.log(logementCards.title) 
     return (
     <Link id={logementCards.id} to={LinkPath}>
         <img src={logementCards.cover}/>

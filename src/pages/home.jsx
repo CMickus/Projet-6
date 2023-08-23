@@ -13,7 +13,7 @@ export function Home() {
     <>
        <Banner/>
         <div>
-            {logementinfo.forEach((location) =>{
+            {logementinfo.map((location) =>{
                 Card(location);
                //<Card key={location.id} id={location.id} title={location.title} cover={location.cover}/>
             })}
