@@ -10,7 +10,10 @@ export function Logement() {
   const LogementId = useParams();
   console.log(LogementId)
   LogementListe.forEach((item) =>{
-    if (item.id == LogementId) {
+    console.log(item.id)
+    if (item.id == LogementId.id) {
+      console.log(item.id)
+      console.log(LogementId.id)
       return (
       <>
         <main>
