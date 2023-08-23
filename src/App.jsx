@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 //import root from "./index";
 import {BaseLayout} from "./components/BaseLayout"
-import { Home } from "./pages/home";
-import { Logement } from "./pages/logements";
-import { Apropos } from "./pages/a-propos"
-import { ErrorPage } from './pages/error-page';
+import { Home } from "./pages/Home";
+import { Logement } from "./pages/Logements";
+import { Apropos } from "./pages/A-propos"
+import { ErrorPage } from './pages/Error-page';
 
 //ici seront les routes du routings
 function App() {

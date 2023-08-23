@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
-import style from './a-propos.module.css';
+import style from './A-propos.module.css';
 //import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';*/
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 //<FontAwesomeIcon className={style.cardcontentcolor} icon="fa-solid fa-chevron-down" rotation={180} />
-import {Banner} from '../components/banner'
+import {Banner} from '../components/Banner'
 // importe logement.json de la meme manière
 
 //ici tous les elements element ouvrables sont deqs composants

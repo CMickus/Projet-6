@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
 import { useParams } from 'react-router-dom';
-import { HiddenText } from '../components/hiddentext';
+import { HiddenText } from '../components/Hidden-text';
 //les tags sont AUSSI des composants
 import LogementListe from '../logements.json'
 

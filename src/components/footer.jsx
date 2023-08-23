@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import '../index.css';
-import style from './footer.module.css'
+import style from './Footer.module.css'
 import logo from './images/LOGO2.png'
 
 export function Footer(){

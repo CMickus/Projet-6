@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Link} from 'react-router-dom';
 import '../index.css';
-import style from './header.module.css'
+import style from './Header.module.css'
 import logo from './images/LOGO.jpg'
 
 export function Header(){

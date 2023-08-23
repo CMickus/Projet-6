@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
-import {Card} from '../components/card';
+import {Card} from '../components/Card';
 import logementinfo from "../logements.json";
-import {Banner} from '../components/banner';
+import {Banner} from '../components/Banner';
 
 
 //utiliser le composant comme fonction en sympe JS et non se buter sur du react tester 
@@ -13,7 +13,7 @@ export function Home() {
     <>
        <Banner/>
         <div>
-            {logementinfo.map((location) =>{
+            {logementinfo.forEach((location) =>{
                 Card(location);
                //<Card key={location.id} id={location.id} title={location.title} cover={location.cover}/>
             })}
