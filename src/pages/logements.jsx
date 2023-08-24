@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
 import { useParams } from 'react-router-dom';
-import { HiddenText } from '../components/Hidden-text';
+//import { HiddenText } from '../components/Hidden-text';
 //les tags sont AUSSI des composants
 import LogementListe from '../logements.json'
 
@@ -11,7 +11,7 @@ export function Logement() {
   console.log(LogementId)
   LogementListe.forEach((item) =>{
     console.log(item.id)
-    if (item.id == LogementId.id) {
+    if (item.id === LogementId.id) {
       console.log(item.id)
       console.log(LogementId.id)
       return (

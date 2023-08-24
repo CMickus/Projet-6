@@ -15,10 +15,14 @@
     border-radius: 20px;
 }
 
-.title{
+.title1{
     display: flex;
     justify-self: center;
     align-self: center;
     position: absolute;
     color: white;
+}
+
+.title2{
+    display: none;
 }

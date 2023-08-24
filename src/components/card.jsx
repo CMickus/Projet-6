@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import {Link} from 'react-router-dom'
 import '../index.css';
-import logementCards from '../logements.json';
+//import logementCards from '../logements.json';
 import './Card.module.css';
 
 export function Card(logementCards){
