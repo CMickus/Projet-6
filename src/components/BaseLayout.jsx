@@ -7,11 +7,11 @@ import style from './Banner.module.css'
 export function BaseLayout() {
     return (
         <>
-            <Header />
-            <main className={style.visuel}>
+            {/*<Header />
+            <main className={style.visuel}>*/}
                 <Outlet />
-            </main>
-            <Footer />
+            {/*</main>
+            <Footer />*/}
         </>
     )
 }

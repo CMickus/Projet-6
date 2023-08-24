@@ -34,3 +34,7 @@
 .cardcontentcolor{
     color: white;
 }
+
+.hidden{
+    display:none;
+}
