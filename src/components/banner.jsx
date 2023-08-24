@@ -18,7 +18,7 @@ export function Banner(){
     return(
         <aside className={style.banner}>
             <img src={banner1} className={style.bannerimage} alt='...'></img>
-            <h2 className={style.title1}>Chez vous, partout et aillerus</h2>
+            <h2 className={style.title1}>Chez vous, partout et ailleurs</h2>
         </aside>
     )
 }

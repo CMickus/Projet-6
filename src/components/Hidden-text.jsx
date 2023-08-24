@@ -6,14 +6,15 @@ import logementsListe from '../logements.json';
 //à voir avec l'id de la page...
 
 export function HiddenText(info){
-   /* if (window.location.href == '/A-propos'){
-        //ici voir pour les 4 comment faire 
-    }*/
-    <div>
+    info = info || null
+    if (window.location == "http://localhost:3000/A-propos"){
+        
+    }
+    return(<div>
         <p>{info}</p>
         <img></img>
         <p>{logementsListe.info}</p>
-    </div>
+    </div>)
 }
 
 export default (HiddenText);

@@ -11,13 +11,24 @@
 
 .card{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 80%;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 10px;
+    border-color: #ff6060;
+}
+
+.tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     background-color: #ff6060;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cardcontentcolor{

@@ -10,7 +10,8 @@ import Header from '../components/header';
 import Footer from '../components/footer';*/
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 //<FontAwesomeIcon className={style.cardcontentcolor} icon="fa-solid fa-chevron-down" rotation={180} />
-import {Banner} from '../components/Banner'
+import { Banner } from '../components/Banner'
+import { HiddenText } from '../components/Hidden-text';
 // importe logement.json de la meme manière
 
 //ici tous les elements element ouvrables sont deqs composants
@@ -23,24 +24,32 @@ export function Apropos() {
       {Banner()}
       <main className={style.textdiv}>
         <div className={style.card}>
-          <p className={style.cardcontentcolor}>Fiabilité</p>
-          <button>
-          </button>
+          <div className={style.tag}>
+            <p className={style.cardcontentcolor}>Respect</p>
+            <button onClick={HiddenText()}>
+            </button>
+          </div>
         </div>
         <div className={style.card}>
-          <p className={style.cardcontentcolor}>Respect</p>
-          <button>
-          </button>
+          <div className={style.tag}>
+            <p className={style.cardcontentcolor}>Respect</p>
+            <button onClick={HiddenText()}>
+            </button>
+          </div>
         </div>
         <div className={style.card}>
-          <p className={style.cardcontentcolor}>Service</p>
-          <button>
-          </button>
+          <div className={style.tag}>
+            <p className={style.cardcontentcolor}>Respect</p>
+            <button onClick={HiddenText()}>
+            </button>
+          </div>
         </div>
         <div className={style.card}>
-          <p className={style.cardcontentcolor}>Sécurité</p>
-          <button>
-          </button>
+          <div className={style.tag}>
+            <p className={style.cardcontentcolor}>Respect</p>
+            <button onClick={HiddenText()}>
+            </button>
+          </div>
         </div>
       </main>
     </>
