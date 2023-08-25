@@ -29,16 +29,16 @@ export function Apropos() {
       <Banner title='' image={banner2}/>
       <main className={style.textdiv}>
         <div className={style.card}>
-         <HiddenText key="1st" info={data} info2=''/>
+         <HiddenText key="1st" info={data[0]} info2='Fiabilité'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="1st" info={data} info2=''/>
+          <HiddenText key="2nd" info={data[1]} info2='Respect'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="1st" info={data} info2=''/>
+         <HiddenText key="3rd" info={data[2]} info2='Service'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="1st" info={data} info2=''/>
+          <HiddenText key="4th" info={data[3]} info2='Sécurité'/>
         </div>
       </main>
     </>
@@ -47,4 +47,4 @@ export function Apropos() {
 
 // faire un composant banner qui va changer je lui passe les props pour changer les images et le title 
 
-export default { Apropos }
+export default  Apropos 
