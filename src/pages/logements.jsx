@@ -8,24 +8,23 @@ import LogementListe from '../logements.json'
 
 export function Logement() {
   const LogementId = useParams();
-  console.log(LogementId)
-  LogementListe.forEach((item) =>{
+  console.log(LogementId.id)
+  LogementListe.map((item) => {
     console.log(item.id)
     if (item.id === LogementId.id) {
       console.log(item.id)
-      console.log(LogementId.id)
-      return (
+      const taglist = item.tags.map((tag)=>
+      <li>{tag}</li>)
+      console.log(taglist)
+      return(
       <>
-        <main>
           <img src={item.cover} />
           <div>
             <div>
-              <h1>appart</h1>
-              <p>lieu</p>
+              <h1>{item.title}</h1>
+              <p>{item.location}</p>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                {taglist}
               </ul>
             </div>
             <div>
@@ -34,12 +33,9 @@ export function Logement() {
               <div>les ctit etoiles</div>
             </div>
           </div>
-          <div>
-          </div>
-        </main>
       </>
-      )}
-      })
+  )}
+  })
 }
 /*
 {HiddenText(Descriprition)}

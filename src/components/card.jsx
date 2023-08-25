@@ -5,7 +5,7 @@ import style from './Card.module.css';
 
 export function Card({location}){
     const logementID = location.id
-    const LinkPath = ("/location/" + {logementID})
+    const LinkPath = ("/location/" + logementID)
     return (
     
     <Link id={location.id} to={LinkPath} className={style.littlecard}>
