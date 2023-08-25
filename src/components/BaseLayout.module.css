@@ -1,4 +1,8 @@
 .visuel{
-    padding-left: 20px;
-    padding-right: 2000px;
+    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
 }
