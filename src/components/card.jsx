@@ -10,7 +10,7 @@ export function Card({location}){
     
     <Link id={location.id} to={LinkPath} className={style.littlecard}>
         <img src={location.cover} className={style.image}/>
-        <p className={style.texte}>{location.title}</p>
+        <p className={style.text}>{location.title}</p>
     </Link>
     )
 }

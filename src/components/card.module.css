@@ -21,11 +21,17 @@
    
 }
 
-.texte{
+.text{
     display: flex;
     position: absolute;
     align-self: flex-start;
     color: white;
     width: 50%;
     margin-left: 1%;
+}
+
+@media screen and (max-width: 767px) {
+    .littlecard{
+        width: 95%;
+    }
 }
