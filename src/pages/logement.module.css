@@ -62,3 +62,24 @@
 .lefblock{
     display: flex;
 }
+
+@media screen and (max-width: 767px) {
+    .global{
+        flex-direction: column;
+    }
+    
+    .leftblock{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .littlestar{
+        align-self: center;
+        padding-left: 20px;
+    }
+
+    .hostpicture{
+        height: 33px;
+    }
+}
