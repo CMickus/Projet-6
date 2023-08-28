@@ -16,3 +16,12 @@
     font-size:2em;
     margin-bottom: 80px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .text{
+        font-size: 1.1em;
+        width: 45%;
+        text-align: center;
+    }
+}
