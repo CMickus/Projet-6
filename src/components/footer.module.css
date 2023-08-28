@@ -13,3 +13,12 @@
 .footertext{
     color: white;
 }
+
+@media screen and (max-width: 767px) {
+    .footerstyle{
+        gap: 0px;
+    }
+    .footertext{
+        width:30%;
+    } 
+}
