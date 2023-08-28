@@ -40,7 +40,8 @@ export function Logement() {
             </div>
           </div>
           <div>
-            <HiddenText key={item.id} prop={item}/>
+            <HiddenText key={item.id} prop={item} prop2="description"/>
+            <HiddenText key='a voir' prop={item} prop2='Equipement'/>
           </div>
         </>
       )

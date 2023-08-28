@@ -29,16 +29,16 @@ export function Apropos() {
       <Banner title='' image={banner2}/>
       <main className={style.textdiv}>
         <div className={style.card}>
-         <HiddenText key="1st" info={data[0]} info2='Fiabilité'/>
+         <HiddenText key="1st" prop={data[0]} prop2='Fiabilité'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="2nd" info={data[1]} info2='Respect'/>
+          <HiddenText key="2nd" prop={data[1]} prop2='Respect'/>
         </div>
         <div className={style.card}>
-         <HiddenText key="3rd" info={data[2]} info2='Service'/>
+         <HiddenText key="3rd" prop={data[2]} prop2='Service'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="4th" info={data[3]} info2='Sécurité'/>
+          <HiddenText key="4th" prop={data[3]} prop2='Sécurité'/>
         </div>
       </main>
     </>
