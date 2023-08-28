@@ -24,4 +24,17 @@
     position: absolute;
     color: white;
     font-size: 3em;
+    width: 92%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .banner{
+        height: 111px;
+    }
+
+    .title1{
+        font-size: 1.7em;
+        margin-left: 40px;
+    }
 }
