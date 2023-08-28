@@ -29,3 +29,16 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 767px) {
+    .headerstyle{
+        height: 70px;
+    }
+
+    .nav{
+        width: 35%;
+    }
+    
+    .link{
+        font-size: 0.8em;
+    }
+}
