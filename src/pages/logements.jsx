@@ -15,8 +15,9 @@ export function Logement() {
     console.log(item.id)
     if (item.id === LogementId.id) {
       console.log(item.id)
-      const taglist = item.tags.map((tag) =>{
-        return(<li className={style.listitem}>{tag}</li>)})
+      const taglist = item.tags.map((tag) => {
+        return (<li className={style.listitem}>{tag}</li>)
+      })
       console.log(taglist)
       return (
         <>
@@ -36,12 +37,28 @@ export function Logement() {
                 <p className={style.hostname}>{item.host.name}</p>
                 <img src={item.host.picture} alt="..." className={style.hostpicture} />
               </div>
-              <div className={style.littlestar}>les ctit etoiles</div>
+              <div className={style.littlestar}>
+                <svg id="svgelem" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,1 4,18 19,6 1,6 16,18" fill="#ff6060" />
+                </svg>
+                <svg id="svgelem" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,1 4,18 19,6 1,6 16,18" fill="#ff6060" />
+                </svg>
+                <svg id="svgelem" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,1 4,18 19,6 1,6 16,18" fill="#ff6060" />
+                </svg>
+                <svg id="svgelem" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="10,1 4,18 19,6 1,6 16,18" fill="#e3e3e3" />
+                </svg>
+                <svg id="svgelem" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="10,1 4,18 19,6 1,6 16,18" fill="#e3e3e3" />
+                </svg>
+              </div>
             </div>
           </div>
           <div>
-            <HiddenText key={item.id} prop={item} prop2="description"/>
-            <HiddenText key='a voir' prop={item} prop2='Equipement'/>
+            <HiddenText key={item.id} prop={item} prop2="description" />
+            <HiddenText key='a voir' prop={item} prop2='Equipement' />
           </div>
         </>
       )

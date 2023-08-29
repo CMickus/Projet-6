@@ -50,13 +50,27 @@
 
 .hostpicture{
     border-radius: 200px;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 .littlestar{
     padding-right: 20px;
+    padding-top: 20px;
     display: flex;
     align-self: flex-end;
     justify-content: flex-end;
+    gap: 10px
+}
+
+.littlestar:hover{
+    cursor: pointer;
+}
+
+
+.littlestar>polygon:hover::before{
+    color:#ff6060;
 }
 
 .lefblock{

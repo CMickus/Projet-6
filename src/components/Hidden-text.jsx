@@ -15,22 +15,22 @@ function displayOnClick(){
 }*/
 
 import React, { useState } from "react";
-function Text(text) { return (<p>{text.description}</p>) };
+function Text(text) { return (<p>{text.description}, hello</p>) };
 function HiddenText({prop, prop2}) {
     const [isVisible, setVisible] = useState(true);
 
-    const onClick = () => setVisible(!isVisible);
-
+    const onClick = () => setVisible(!isVisible);    
     return (
-        <div>
-            <div>
-                <h2>{prop2}</h2>
-                <button onClick={onClick}>{isVisible ? 'Hide' : 'Show'}</button>
-                {isVisible ? <Text /> : null}
+        <div className={style.container}>
+            <div className={style.headcontainer}>
+                <h2 className={style.title}>{prop2}</h2>
+                <button onClick={onClick} className={style.button}>{isVisible ? 'Hide' : 'Show'}</button>
             </div>
-            <Text key={prop.id} text={prop} />
+            {isVisible ? <Text key={prop.id} text={prop}/> : null}
         </div>
     );
 }
+
+
 
 export default HiddenText;

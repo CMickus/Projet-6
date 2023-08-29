@@ -9,10 +9,7 @@ export function Etoile(props){
         <li></li>
         <li></li>
     </ul>
-    forEach(() =>{if(index <= props.rating){
-        className="grey";
-    }})
-    //return();
+
 }
 
 export default Etoile;
