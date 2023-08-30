@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import LogementListe from '../logements.json'
 import style from './Logement.module.css'
 import HiddenText from '../components/Hidden-text';
+import Slideshow  from '../components/Slideshow';
 
 export function Logement() {
   const LogementId = useParams();
@@ -21,7 +22,7 @@ export function Logement() {
       console.log(taglist)
       return (
         <>
-          <img src={item.cover} className={style.cover} alt='' />
+          <Slideshow key={item.id} prop={item.pictures}/>
           <div className={style.global}>
             <div className={style.text}>
               <div>
