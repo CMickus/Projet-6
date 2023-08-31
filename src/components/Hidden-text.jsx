@@ -18,7 +18,6 @@ import React, { useState } from "react";
 function Text(text) { return (<p>{text.description}, hello</p>) };
 function HiddenText({ prop, prop2 }) {
     const [isVisible, setVisible] = useState(true);
-    console.log(prop)
     const onClick = () => setVisible(!isVisible);
     return (
         <div className={style.container}>
