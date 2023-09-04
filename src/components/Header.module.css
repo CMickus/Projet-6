@@ -1,0 +1,44 @@
+.headerstyle{
+    color: #FF6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right:20px;
+    height: 100px;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+    height: 50%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.link{
+    text-decoration: none;
+}
+
+:hover.link{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+    .headerstyle{
+        height: 70px;
+    }
+
+    .nav{
+        width: 35%;
+    }
+    
+    .link{
+        font-size: 0.8em;
+    }
+}

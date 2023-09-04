@@ -1,0 +1,41 @@
+.banner{
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.bannerimage{
+    object-fit:cover;
+    width: 92%;
+    display: flex;
+    position: relative;
+    justify-self: center;
+    border-radius: 20px;
+    filter: brightness(0.8)
+}
+
+.title1{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    width: 92%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .banner{
+        height: 111px;
+        margin-top: 10px;
+    }
+
+    .title1{
+        font-size: 1.7em;
+        margin-left: 40px;
+    }
+}
