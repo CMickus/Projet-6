@@ -1,5 +1,4 @@
 import React from 'react';
-//import '../index.css';
 import style from './Banner.module.css'
 
 export function Banner({title, image}){

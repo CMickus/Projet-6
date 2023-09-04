@@ -7,14 +7,13 @@ import {
 //import root from "./index";
 import {BaseLayout} from "./components/BaseLayout"
 import { Home } from "./pages/Home";
-import { Logement } from "./pages/Logements";
+import { Logement } from "./pages/Logement";
 import { Apropos } from "./pages/A-propos"
 import { ErrorPage } from './pages/Error-page';
 
 //ici seront les routes du routings
 function App() {
   return (
-    <>
       <Routes>
         <Route path="/" element={<BaseLayout/>}>
           <Route index element={<Home />} />
@@ -23,7 +22,6 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
-    </>
   );
 }
 //un systeme de layout serait mieux pour voir en fonctiond eoù je suis pour modifer header footer and co sanas les repeter dans chaques pages

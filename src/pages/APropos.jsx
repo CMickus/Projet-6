@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import '../index.css';
 import style from './A-propos.module.css';
 //import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -11,7 +10,7 @@ import Footer from '../components/footer';*/
 //c'est pas des select mais simplement des bloc avec un bouton, pour un déroulement ety affiché un texte
 //<FontAwesomeIcon className={style.cardcontentcolor} icon="fa-solid fa-chevron-down" rotation={180} />
 import Banner from '../components/Banner'
-import HiddenText  from '../components/Hidden-text';
+import HiddenText  from '../components/HiddenText';
 import banner2 from '../components/images/paysage_montagne.jpg';
 import data from '../aproposinfo.json'
 // importe logement.json de la meme manière
@@ -24,21 +23,22 @@ import data from '../aproposinfo.json'
 
 //les 4 à propos doivent etre un composant creer un json par exemple
 export function Apropos() {
+  console.log(data)
   return (
     <>
       <Banner title='' image={banner2}/>
       <main className={style.textdiv}>
         <div className={style.card}>
-         <HiddenText key="1st" prop={data[0]} prop2='Fiabilité'/>
+         <HiddenText info={data[0].description} fixe='Fiabilité'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="2nd" prop={data[1]} prop2='Respect'/>
+          <HiddenText info={data[1].description} fixe='Respect'/>
         </div>
         <div className={style.card}>
-         <HiddenText key="3rd" prop={data[2]} prop2='Service'/>
+         <HiddenText info={data[2].description} fixe='Service'/>
         </div>
         <div className={style.card}>
-          <HiddenText key="4th" prop={data[3]} prop2='Sécurité'/>
+          <HiddenText info={data[3].description} fixe='Sécurité'/>
         </div>
       </main>
     </>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
-//import location from '../logements.json';
 import style from './Card.module.css';
 
 export function Card({location}){
@@ -9,7 +8,7 @@ export function Card({location}){
     return (
     
     <Link id={location.id} to={LinkPath} className={style.littlecard}>
-        <img src={location.cover} className={style.image}/>
+        <img src={location.cover} className={style.image} alt={location.title}/>
         <p className={style.text}>{location.title}</p>
     </Link>
     )
