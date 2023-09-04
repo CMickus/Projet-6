@@ -8,8 +8,8 @@ import {
 import {BaseLayout} from "./components/BaseLayout"
 import { Home } from "./pages/Home";
 import { Logement } from "./pages/Logement";
-import { Apropos } from "./pages/A-propos"
-import { ErrorPage } from './pages/Error-page';
+import { Apropos } from "./pages/APropos"
+import { ErrorPage } from './pages/ErrorPage';
 
 //ici seront les routes du routings
 function App() {

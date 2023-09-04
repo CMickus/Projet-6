@@ -12,10 +12,6 @@
     padding-left: 20px;
 }
 
-.location{
-   /* font-size: 1.1em;*/
-}
-
 .list{
     display: flex;
     flex-direction: row;
@@ -100,5 +96,6 @@
 
     .hostpicture{
         height: 33px;
+        align-self: center;
     }
 }

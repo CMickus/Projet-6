@@ -1,9 +1,9 @@
 import React from 'react';
 import '../index.css';
-import Card from '../components/1Card';
+import Card from '../components/Card';
 import logementinfo from "../logements.json";
 import style from './Home.module.css';
-import Banner from '../components/1Banner';
+import Banner from '../components/Banner';
 import banner1 from '../components/images/bord_de_mer_falaise.png';
 
 

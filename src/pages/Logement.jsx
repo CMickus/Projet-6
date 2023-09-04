@@ -7,7 +7,7 @@ import style from './Logement.module.css'
 import HiddenText from '../components/HiddenText';
 import Slideshow  from '../components/Slideshow';
 import {ErrorPage} from './ErrorPage';
-import Etoile from '../components/1Etoiles'
+import Etoile from '../components/Etoiles'
 import Tag from '../components/Taglist'
 
 export function Logement() {

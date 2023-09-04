@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import style from './A-propos.module.css';
+import style from './APropos.module.css';
 //import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

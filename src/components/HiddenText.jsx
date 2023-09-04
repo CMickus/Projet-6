@@ -1,4 +1,4 @@
-import style from './Hidden-text.module.css';
+import style from './HiddenText.module.css';
 import arrow from './images/arrowup.svg'
 
 

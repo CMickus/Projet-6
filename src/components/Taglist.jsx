@@ -6,7 +6,7 @@ export function Tag(taglist){
     const length = taglist.taglist.length
     console.log(length)
     
-    return(taglist.taglist.map((item) =><span className={style.tag}>{item}</span>))
+    return(taglist.taglist.map((item) =><li className={style.tag}>{item}</li>))
     
 }
 
