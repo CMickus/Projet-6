@@ -1,5 +1,4 @@
 import React from 'react';
-//import ReactDOM from 'react-dom/client';
 import '../index.css';
 import { useParams } from 'react-router-dom';
 import LogementListe from '../logements.json'
@@ -12,17 +11,6 @@ import Tag from '../components/Taglist'
 
 export function Logement() {
   const { id } = useParams();
-  /*return (LogementListe.map((item) => {
-    console.log(item.id)
-    if (item.id === id) {
-      console.log(item.id)
-      const taglist = item.tags.map((tag) => {
-        return (<li className={style.listitem}>{tag}</li>)
-      })
-      console.log(taglist)
-      
-    }
-  }))*/
   const item = LogementListe.find((item) => item.id === id)
   if (item === undefined){
     return (<ErrorPage/>)
@@ -55,10 +43,5 @@ export function Logement() {
     </>
   )
 }
-/*
-{HiddenText(Descriprition)}
-{HiddenText(Equipement)}
-*/
-//pour les étoiles faire un composant qui posera les étoiles en couleur jusqu'au rating (une liste et index et après sont gris jouer avec classes et css)
-//idem pour les tags c'est une liste a generer via logement
+
 export default Logement 

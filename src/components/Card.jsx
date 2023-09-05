@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import style from './Card.module.css';
 
+/* ici on utilise simplement l'id des images du fichier logmenent json et on génère les cartes ainsi*/
 export function Card({location}){
     const logementID = location.id
     const LinkPath = ("/location/" + logementID)

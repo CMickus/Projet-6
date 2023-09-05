@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import style from './Slideshow.module.css'
 import arrow from './images/Arrowleft.svg'
 
-
+/*Ici utilisation basique du useState comme compteur : 
+on va simplement compter le nombre d'images dans la liste, au dernier numéro on repasse au premier et vis versa
+On rajoute un if else pour le cas où il n'y a qu'une seule image */
 export function Slideshow(prop) {
     const [count, setCount] = useState(0);
     console.log(prop.prop.length)
@@ -11,7 +13,6 @@ export function Slideshow(prop) {
             <img className={style.picture} src={prop.prop}></img>
         </div>)
     } else {
-
         return (
             <div className={style.cover}>
                 <button className={style.minus} onClick={() => {

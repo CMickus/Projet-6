@@ -2,18 +2,8 @@ import style from './HiddenText.module.css';
 import arrow from './images/arrowup.svg'
 
 
-//en gros si c'est page a propos juste faire un switch sur les class pour faire apparaitre et disparaitre le texte fixe
-//pour le reste voir si on peut retirer des element react via ces fonctions eux sont généré automatiquement
-/*
-function displayOnClick(){
-    let [state, value] = useState(false)
-    const handleClick =(e)=>{
-        e.preventDefault()
-        value(!value)
-    }
-    if value
-}*/
-
+/*Utilisation d'un useState pour alterner entre true et false 
+avec ces conditions on peut afficher ou non la balise p en cliquant sur le bouton ET on peut changer le bouton lui meme*/
 import React, { useState } from "react";
 function HiddenText({info , fixe }) {
     const [isVisible, setVisible] = useState(false);

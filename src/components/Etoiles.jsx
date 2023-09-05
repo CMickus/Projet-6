@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Rating } from 'react-simple-star-rating';
 
-
+/* ici par soucis de simplicité import d'un systeme de rating
+inclu un hover et le changement des couleurs
+initial value est necessaire popur les premières etoiles creer 
+il sera possible plus tard de récupérer la note de l'utilisateur*/
 export function Etoile(grade) {
     const [rating, setRating] = useState(grade.grade)
     console.log(grade.grade)
     console.log(rating)
-    // Catch Rating value
     const handleRating = (rate) => {
         setRating(rate)
         console.log(rate)
-        // other logic
+        
     }
-    // Optinal callback functions
 
 
     return (
@@ -22,7 +23,6 @@ export function Etoile(grade) {
                 initialValue={rating}
                 onClick={handleRating}
                 ratingValue={rating}
-            /* Available Props */
             />
         </div>
     )

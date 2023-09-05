@@ -7,10 +7,9 @@ import Banner from '../components/Banner';
 import banner1 from '../components/images/bord_de_mer_falaise.png';
 
 
-//utiliser le composant comme fonction en sympe JS et non se buter sur du react tester 
+/*le .map pour afficher les cartes de chaque images*/
 export function Home() {
     console.log(logementinfo)
-    //remplir via card et logements.json
     return(
     <>
        <Banner title='Chez vous, partout et ailleurs' image={banner1}/>

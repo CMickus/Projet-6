@@ -4,6 +4,8 @@ import '../index.css';
 import style from './Header.module.css'
 import logo from './images/LOGO.jpg'
 
+
+/*Navlink plutot que Link permet un changement du visuel si on est sur la page sur lequel le lien mène ( a travailler)*/
 export function Header(){
     return (
         <header className={style.headerstyle}>
