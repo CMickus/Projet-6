@@ -49,7 +49,12 @@
 }
 
 .text{
-    transition: 0.5s;
+    transition: height 200ms;
     padding: 5px;
-    height: stretch;  
+    height: stretch;
+    overflow: hidden; 
+}
+
+.texthidden{
+    height: 0;
 }

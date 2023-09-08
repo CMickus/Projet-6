@@ -57,6 +57,7 @@
 @media screen and (max-width: 767px) {
     .cover{
         justify-content: flex-start;
+        max-height: 225px;
     }
 
     .plus{

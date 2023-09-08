@@ -20,6 +20,8 @@ function HiddenText({info , fixe }) {
 }
 
 
+//<p className={`${style.text} ${isVisible ? null : style.texthidden}`}>{info} </p>
+
 
 
 

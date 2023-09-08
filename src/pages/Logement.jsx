@@ -21,7 +21,7 @@ export function Logement() {
       <div className={style.global}>
         <div className={style.text}>
           <div>
-            <h1>{item.title}</h1>
+            <h1 className={style.title}>{item.title}</h1>
             <p className={style.location}>{item.location}</p>
           </div>
           <ul className={style.list}>

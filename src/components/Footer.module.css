@@ -20,5 +20,6 @@
     }
     .footertext{
         width:30%;
+        display: flex;
     } 
 }

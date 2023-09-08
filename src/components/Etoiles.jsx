@@ -1,6 +1,7 @@
 import React from 'react';
 import grey from './images/greystar.svg'
 import red from './images/redstar.svg'
+import style from './Etoile.module.css'
 
 /* ici par soucis de simplicité import d'un systeme de rating
 inclu un hover et le changement des couleurs
@@ -15,7 +16,7 @@ function Star({ color }) {
 }
 export default function Etoile({ grade }) {
     console.log(grade)
-    return <div>
+    return <div className={style.stargroup}>
       {
         [1, 2, 3, 4, 5].map(
           (starnum) => <Star color={starnum > grade ? "grey" : "red"} />
