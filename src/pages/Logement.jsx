@@ -25,7 +25,8 @@ export function Logement() {
             <p className={style.location}>{item.location}</p>
           </div>
           <ul className={style.list}>
-            <Tag taglist={item.tags}/>
+            {item.tags.map((element,index) =>
+            <Tag key={index} content={element}/>)}
           </ul>
         </div>
         <div className={style.leftblock}>

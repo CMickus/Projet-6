@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
     border-radius: 20px;
     margin-top: 20px;
 }
@@ -25,7 +26,9 @@
     color: white;
     font-size: 3em;
     width: 92%;
-    padding-left: 50%;
+    top: 25%;
+    left: 25%;
+    z-index: 900;
 }
 
 

@@ -10,22 +10,21 @@ export function Slideshow(prop) {
     console.log(prop.prop.length)
     if (prop.prop.length === 1) {
         return (<div className={style.cover}> 
-            <img className={style.picture} src={prop.prop}></img>
+            <img className={style.pictures} src={prop.prop} alt="hello"></img>
         </div>)
     } else {
         return (
             <div className={style.cover}>
                 <button className={style.minus} onClick={() => {
-                    
                     if (count === 0) {
                         setCount(prop.prop.length - 1);
                     } else {
                         setCount(count - 1)
                     }
                 }}> 
-                   <img src={arrow} alt="" />
+                   <img src={arrow} alt="bouton fleche minus" />
                 </button>
-                <img className={style.picture} src={prop.prop[count]} alt="hello" />
+                <img className={style.pictures} src={prop.prop[count]} alt="hello" />
                 <p className={style.number}>{count + 1}/{prop.prop.length}</p>
                 <button className={style.plus} onClick={() => {
                     
@@ -35,7 +34,7 @@ export function Slideshow(prop) {
                         setCount(count + 1)
                     }
                 }}> 
-                  <img src={arrow} className={style.arrowright} alt="" />
+                  <img src={arrow} className={style.arrowright} alt="bouton fleche plus" />
                 </button>
             </div>
         )
