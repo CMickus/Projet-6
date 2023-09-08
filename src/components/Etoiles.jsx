@@ -6,43 +6,20 @@ import red from './images/redstar.svg'
 inclu un hover et le changement des couleurs
 initial value est necessaire popur les premières etoiles creer 
 il sera possible plus tard de récupérer la note de l'utilisateur*/
-export function Etoile(grade) {
-   /* const [rating, setRating] = useState(grade.grade)
-    console.log(grade.grade)
-    console.log(rating)
-    const handleRating = (rate) => {
-        setRating(rate)
-        console.log(rate)
-        
+
+function Star({ color }) {
+    if(color ==="red"){
+    return <img src={red} alt="colored rating star" />} else {
+        return <img src={grey} alt="grey rating star"/> 
     }
-
-
-    return (
-        <div className='App'>
-            <Rating
-                fillColor='#ff6060'
-                initialValue={rating}
-                onClick={handleRating}
-                ratingValue={rating}
-            />
-        </div>
-    )*/
-        
-        let rendu = []
-
-        for(let i=1; i<= grade; i++){
-           rendu.push(<img src={red} alt="..."></img>)  
-        };
-        
-        for(let j = grade+1; j<=5; j++){
-            rendu.push(<img src={grey} alt="..."></img>)
-        };
-        console.log(rendu)
-    return(
-        <div>{rendu.map((picturecontent) =>
-        picturecontent)}
-        </div>
-    )
 }
-
-export default Etoile;
+export default function Etoile({ grade }) {
+    console.log(grade)
+    return <div>
+      {
+        [1, 2, 3, 4, 5].map(
+          (starnum) => <Star color={starnum > grade ? "grey" : "red"} />
+        )
+      }
+    </div>
+}
