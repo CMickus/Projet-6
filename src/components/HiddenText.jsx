@@ -12,7 +12,7 @@ function HiddenText({info , fixe }) {
         <div className={style.container}>
             <div className={style.headcontainer}>
                 <h2 className={style.title}>{fixe}</h2>
-                <button onClick={onClick} className={style.button}>{isVisible ? <img src={arrow} className={style.arrowdown} alt="" /> : <img src={arrow} alt="" />}</button>
+                <button onClick={onClick} className={style.button}><img src={arrow} alt="fléche" className={`${style.arrow} ${isVisible ? style.arrowrotate : null}`} /></button>
             </div>
             {isVisible ? <p className={style.text}>{info} </p> : null}
         </div>

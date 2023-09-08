@@ -28,20 +28,18 @@
     color:white;
     padding-left: 10px;
 }
+
 .button{
     padding-right: 10px;
 }
 
-.transition{
+.arrowrotate{
     transition-duration: 0.5s;
+    transform: rotate(-0.5turn);
 }
 
-.up{
+.arrow{
     transition-duration: 0.5s;
-}
-
-.arrowdown{
-    transform: scaleY(-1);
 }
 
 .button{
@@ -51,6 +49,7 @@
 }
 
 .text{
+    transition: 0.5s;
     padding: 5px;
-    height: stretch;
+    height: stretch;  
 }
