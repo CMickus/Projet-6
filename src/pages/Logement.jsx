@@ -1,8 +1,8 @@
 import React from 'react';
-import '../index.css';
+import '../index.scss';
 import { useParams } from 'react-router-dom';
 import LogementListe from '../logements.json'
-import style from './Logement.module.css'
+import style from './Logement.module.scss'
 import HiddenText from '../components/HiddenText';
 import Slideshow  from '../components/Slideshow';
 import {ErrorPage} from './ErrorPage';

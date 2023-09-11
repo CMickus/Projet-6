@@ -1,7 +1,7 @@
 import React from 'react';
 import grey from './images/greystar.svg'
 import red from './images/redstar.svg'
-import style from './Etoile.module.css'
+import style from './Etoile.module.scss'
 
 /* ici par soucis de simplicité import d'un systeme de rating
 inclu un hover et le changement des couleurs

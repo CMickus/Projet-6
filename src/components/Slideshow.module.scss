@@ -1,70 +1,71 @@
-.cover{
+.cover {
     border-radius: 20px;
     max-height: 415px;
-    width:100%;
+    width: 100%;
     margin: 20px;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: center;
-}
-
-.pictures{
+  }
+  
+  .pictures {
     display: flex;
     object-fit: cover;
     width: 92%;
     position: relative;
     justify-self: center;
     border-radius: 20px;
-}
-
-.minus{
+  }
+  
+  .minus {
     position: absolute;
     display: flex;
     justify-self: flex-start;
     align-self: center;
-    top:35%;
-    left:3%;
-    z-index:900;
+    top: 35%;
+    left: 3%;
+    z-index: 900;
     border: none;
     background: none;
-}
-
-.plus{
+  }
+  
+  .plus {
     position: absolute;
     display: flex;
     justify-self: flex-end;
     align-self: center;
     border: none;
     background: none;
-    right:3%;
-    top:35%;
-}
-
-.number{
+    right: 3%;
+    top: 35%;
+  }
+  
+  .number {
     position: absolute;
     display: flex;
     justify-self: center;
     align-self: flex-end;
     color: white;
-    left:45%;
-}
-
-.arrowright{
+    left: 45%;
+  }
+  
+  .arrowright {
     transform: scaleX(-1);
-}
-
-@media screen and (max-width: 767px) {
-    .cover{
-        justify-content: flex-start;
-        max-height: 225px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cover {
+      justify-content: flex-start;
+      max-height: 225px;
     }
-
-    .plus{
-        right: 5%;
+  
+    .plus {
+      right: 5%;
     }
-
-    .minus{
-        left:-3%
+  
+    .minus {
+      left: -3%;
     }
-}
+  }
+  

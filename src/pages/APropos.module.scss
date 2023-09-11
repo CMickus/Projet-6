@@ -1,4 +1,4 @@
-.textdiv{
+.textdiv {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,9 +7,9 @@
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.card{
+  }
+  
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,9 +19,9 @@
     padding-right: 10px;
     border-radius: 10px;
     border-color: #ff6060;
-}
-
-.tag{
+  }
+  
+  .tag {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,12 +30,13 @@
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.cardcontentcolor{
+  }
+  
+  .cardcontentcolor {
     color: white;
-}
-
-.hidden{
-    display:none;
-}
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

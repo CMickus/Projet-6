@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import style from './Slideshow.module.css'
+import style from './Slideshow.module.scss'
 import arrow from './images/Arrowleft.svg'
 
 /*Ici utilisation basique du useState comme compteur : 

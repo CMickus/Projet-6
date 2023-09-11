@@ -1,4 +1,4 @@
-.banner{
+.banner {
     height: 220px;
     width: 100%;
     display: flex;
@@ -6,19 +6,19 @@
     position: relative;
     border-radius: 20px;
     margin-top: 20px;
-}
-
-.bannerimage{
-    object-fit:cover;
+  }
+  
+  .bannerimage {
+    object-fit: cover;
     width: 92%;
     display: flex;
     position: relative;
     justify-self: center;
     border-radius: 20px;
-    filter: brightness(0.8)
-}
-
-.title1{
+    filter: brightness(0.8);
+  }
+  
+  .title1 {
     display: flex;
     justify-self: center;
     align-self: center;
@@ -29,18 +29,18 @@
     top: 25%;
     left: 25%;
     z-index: 900;
-}
-
-
-@media screen and (max-width: 767px) {
-    .banner{
-        height: 111px;
-        margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .banner {
+      height: 111px;
+      margin-top: 10px;
     }
-
-    .title1{
-        font-size: 1.7em;
-        top:0%;
-        left: 6%;
+  
+    .title1 {
+      font-size: 1.7em;
+      top: 0%;
+      left: 6%;
     }
-}
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../index.css';
-import style from './APropos.module.css';
+import '../index.scss';
+import style from './APropos.module.scss';
 import Banner from '../components/Banner'
 import HiddenText  from '../components/HiddenText';
 import banner2 from '../components/images/paysage_montagne.jpg';
