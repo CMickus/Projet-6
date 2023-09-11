@@ -19,7 +19,7 @@ export default function Etoile({ grade }) {
     return <div className={style.stargroup}>
       {
         [1, 2, 3, 4, 5].map(
-          (starnum) => <Star color={starnum > grade ? "grey" : "red"} />
+          (starnum) => <Star key={starnum} color={starnum > grade ? "grey" : "red"} />
         )
       }
     </div>

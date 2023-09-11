@@ -14,7 +14,7 @@ export function Apropos() {
   console.log(data)
   return (
     <>
-      <Banner title='' image={banner2}/>
+      <Banner title='' image={banner2} altName="paysage de montagne"/>
       <main className={style.textdiv}>
         <div className={style.card}>
          <HiddenText info={data[0].description} fixe='Fiabilité'/>

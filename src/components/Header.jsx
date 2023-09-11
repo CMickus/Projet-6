@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../index.css';
+import '../index.scss';
 import style from './Header.module.scss'
 import logo from './images/LOGO.jpg'
 
@@ -26,4 +26,4 @@ export function Header() {
     )
 }
 
-export default { Header }
+//export default { Header }

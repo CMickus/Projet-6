@@ -12,7 +12,7 @@ export function Home() {
     console.log(logementinfo)
     return(
     <>
-       <Banner title='Chez vous, partout et ailleurs' image={banner1}/>
+       <Banner title='Chez vous, partout et ailleurs' image={banner1} altName='falaise en bord de mer'/>
         <div className={style.bigcard}>
             {logementinfo.map((location) =>{
                 return(
