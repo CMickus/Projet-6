@@ -58,8 +58,12 @@
     .cover {
       justify-content: flex-start;
       max-height: 225px;
+      margin: 0;
+      justify-self: center;
+      align-self: center;
+     
     }
-  
+
     .plus {
       right: 5%;
     }
