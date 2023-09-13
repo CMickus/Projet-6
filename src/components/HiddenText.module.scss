@@ -10,7 +10,6 @@
     border-radius: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    width: 50%;
     gap: 0px;
     height: min-content;
     background-color: #e3e3e3;
@@ -49,13 +48,22 @@
   }
   
   .text {
-    transition: height 200ms;
-    padding: 5px;
-    height: stretch;
-    overflow: hidden;
+    transition: ease-in-out .2s;
+    max-height: 200px;
+    padding: 20px;
   }
   
   .texthidden {
-    height: 0;
+    transition: ease-in-out .2s;
+    max-height: 0;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+  }
+
+  @media screen and (max-width: 767px) {
+    .title{
+      font-size: 0.8em;
+    }
   }
   

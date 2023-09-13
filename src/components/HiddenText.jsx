@@ -14,7 +14,7 @@ function HiddenText({info , fixe }) {
                 <h2 className={style.title}>{fixe}</h2>
                 <button onClick={onClick} className={style.button}><img src={arrow} alt="fléche" className={`${style.arrow} ${isVisible ? style.arrowrotate : null}`} /></button>
             </div>
-            {isVisible ? <p className={style.text}>{info} </p> : null}
+            <p className={`${style.texthidden} ${isVisible ?  style.text : null }`}>{info} </p> 
         </div>
     );
 }

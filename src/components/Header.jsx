@@ -14,7 +14,7 @@ export function Header() {
                 <NavLink
                     to="/"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "active" : style.link}>
+                        isPending ? "pending" : isActive ? style.active : style.link}>
                     Acceuil
                 </NavLink>
                 <NavLink to="/A-propos" className={({ isActive, isPending }) =>
