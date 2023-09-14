@@ -46,13 +46,7 @@
     border: none;
     border-radius: 10px;
   }
-  
-  .text {
-    transition: ease-in-out .2s;
-    max-height: 200px;
-    padding: 20px;
-  }
-  
+
   .texthidden {
     transition: ease-in-out .2s;
     max-height: 0;
@@ -61,6 +55,12 @@
     padding:0;
   }
 
+  .text {
+    transition: ease-in-out .2s;
+    max-height: 200px;
+    padding: 20px;
+  }
+  
   @media screen and (max-width: 767px) {
     .title{
       font-size: 0.8em;
